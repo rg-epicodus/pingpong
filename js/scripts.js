@@ -1,10 +1,16 @@
 // Business Logic
 var ball = [];
+var ping = "Ping!";
+var pong = "Pong!";
+var both = "Ping Pong!";
+var miss = "Miss!!";
 var pingPong = function(volley) {
   if (volley % 3 === 0) {
-    return true;
-  } else {
-    return false;
+    return ping;
+  } else if (volley % 5 === 0) {
+    return pong;
+  } else {  
+    return miss;
   }
 };
 
