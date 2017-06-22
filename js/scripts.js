@@ -1,12 +1,12 @@
 // Business Logic
-
+var ball = [];
 var pingPong = function(volley) {
-  return false;
+  if (volley % 3 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 };
-
-
-
-
 
 
 
