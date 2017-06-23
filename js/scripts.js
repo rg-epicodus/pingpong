@@ -5,11 +5,13 @@ var pong = "Pong!";
 var both = "Ping Pong!";
 var miss = "Miss!!";
 var pingPong = function(volley) {
-  if (volley % 3 === 0) {
+  if ((volley % 3 === 0) && (volley % 15 !== 0)) {
     return ping;
-  } else if (volley % 5 === 0) {
+  } else if ((volley % 5 === 0) && (volley % 15 !== 0)) {
     return pong;
-  } else {  
+  } else if ((volley % 3 === 0) && (volley % 5 === 0)) {
+    return both;
+  } else {
     return miss;
   }
 };
@@ -29,6 +31,6 @@ $(document).ready(function() {
     event.preventDefault();
     var volley = parseInt($("input#userInput").val());
     var result = pingPong(volley);
-    $("#result").text(result);
+    $("#result").append("<p>" + result + "</p>");
   });
 });
