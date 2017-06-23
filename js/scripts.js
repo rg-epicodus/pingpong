@@ -12,6 +12,8 @@ var service = (function() {
     for (var i = 0; i <= volley.length; i++) {
       if (volley [i] % 3 === 0) {
         volley [i] = "Ping!"
+      } else if (volley [i] % 5 === 0) {
+        volley [i] = "Pong!"
       }
     }
   $("#result").show();
