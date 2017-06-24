@@ -10,12 +10,12 @@
 
 **Specifications
 
-Behavior                                Example Input     Example Output
-it can count up to the provided number    2                  1,2
-will display "Ping!" if a multiple of 3   3                  1,2,Ping!
-will display "Pong!" if a multiple of 5   5                  1,2,Ping!,4,Pong!
-displays "PingPong!" for multiple of 15   15                 1,2,Ping!...13,14,PingPong!
-
+| Behavior                                | Example Input |    Example Output   |
+|-----------------------------------------|:-------------:|:-------------------:|
+| it can count up to the provided number  |       2       |         1,2         |
+| will display "Ping!" if a multiple of 3 |       3       |      1,2,Ping!      |
+| will display "Pong!" if a multiple of 5 |       5       |  1,2,Ping!,4,Pong!  |
+| displays "PingPong!" for multiple of 15 |       15      | 1,2,...14,PingPong! |
 
 **Setup/Installation Requirements
 
