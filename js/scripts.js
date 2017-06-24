@@ -14,14 +14,14 @@ var service = (function() {
         volley [i] = "Ping!"
       } else if ((volley [i] % 5 === 0) && (volley [i] % 15 !== 0)) {
         volley [i] = "Pong!"
-      } else if ((volley [i] % 3 === 0) && (volley [i] % 5 === 0)) {
+      } else if (volley [i] % 15 === 0) {
         volley [i] = "PingPong!"
       }
     }
   $("#result").show();
 
   volley.forEach(function(volley) {
-    $("#result h1").append("<p>" + volley + "</p>");
+    $("#result ul").append("<li>" + volley + "</li>");
   })
 
 })
