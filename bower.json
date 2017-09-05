@@ -1,0 +1,14 @@
+{
+  "name": "pingpong",
+  "description": "### {User Input parsed for multiples of 3,5,15 and diffent strings returned}, {06/23/2017}",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/rg-epicodus/pingpong",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

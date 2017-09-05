@@ -23,18 +23,16 @@
         <li>Numbers divisible by 5 will display "Pong!"</li>
         <li>Numbers divisible by both 3 and 5 will display "PingPong!"</li>
       </ul>
-      <div id="ping-pong-form">
-        <form>
-          <div class="form-group">
-            <label for="goal">Your number here please:</label>
-            <input type="number" id="goal">
-          </div>
-            <button type="submit" class="btn">Play!</button>
-        </form>
-      </div>
-      <div id="solution">
-        <ul></ul>
-      </div>
-    </div>
+      <form id="ping-pong-form">
+        <label for="goal">Enter a number:</label>
+        <input id="goal" type="number">
+        <button type="submit">Submit</button>
+      </form>
+      <form id="signup">
+        <label for="email">Enter your email:</label>
+        <input id="email" type="text">
+        <button type="submit">Submit</button>
+      </form>
+      <ul id="solution"></ul>
   </body>
 </html>
